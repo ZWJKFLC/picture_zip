@@ -1,0 +1,32 @@
+  992  convert .tmp/*.jpge screen.gif
+  993  ls
+  994  convert tmp/*.jpge screen.gif
+  995  convert ./tmp/*.jpge screen.gif
+  996  ls
+  997  convert ./tmp/*.jpg screen.gif
+  998  ls
+  999  ll
+ 1000  convert screen.gif -fuzz 15% -layers Optimize output.gif
+ 1001  ll
+ 1002  convert ./tmp/*.jpg -strip -resize 75% -quality 75% -fuzz 5% screen2.gif
+ 1003  ll
+ 1004  convert screen2.gif -fuzz 15% -layers Optimize output2.gif
+ 1005  ll
+ 1006  convert screen2.gif -fuzz 5% -layers Optimize output2.gif
+ 1007  ll
+ 1008  convert animation.gif -fuzz 5% -layers Optimize output3.gif
+ 1009  ll
+ 1010  unzip 29.zip 
+ 1011  convert ./29/*.jpg -strip -resize 75% -quality 75% -fuzz 5% 29.gif
+ 1012  convert ./29/*.png -strip -resize 75% -quality 75% -fuzz 5% 29.gif
+ 1013  ll
+ 1014  convert ./29/*.png -strip 29.gif
+ 1015  ll
+ 1016  convert 29.gif -fuzz 5% -layers Optimize 29.gif
+ 1017  convert -delay 1 29.mp4 -coalesce -layers optimize -loop 0 animation.gif
+ 1018  convert -delay 1 29.mp4 -loop 0 animation.gif
+ 1019  ffmpeg
+ 1020  apt install ffmpeg
+ 1021  convert -delay 1 29.mp4 -loop 0 animation.gif
+ 1022  ll
+ 1023  history
